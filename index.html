@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Práctica Javascript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header>
+            <h1 id="header-titulo" onclick="toggleTitle(this)">Práctica de Javascript</h1>
+            <div id="submenu1">
+                <ul>
+                    <li><a onclick="resetFontSize()" href="#">Aa</a></li>
+                    <li><a onclick="increaseFontSize()" href="#" class="disabled">A+</a></li>
+                    <li><a onclick="decreaseFontSize()" href="#" class="disabled">a-</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="javascript:openMenu('sub_caja');changeContentColors('#bbb','#000');"
+                        class="nav-link-title">Caja</a>
+                    <ul id="sub_caja" class="sub-menu">
+                        <li><a href="javascript:changeContentColors('#999', '#000')">fondo a</a></li>
+                        <li><a href="javascript:changeContentColors('#777', '#ddd')">fondo b</a></li>
+                        <li><a href="javascript:changeContentColors('#555', '#fff')">fondo c</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:openMenu('sub_texto');changeContentFont(0)" class="nav-link-title">Texto</a>
+                    <ul id="sub_texto" class="sub-menu">
+                        <li><a href="javascript:changeContentFont(1)">tipografía a</a></li>
+                        <li><a href="javascript:changeContentFont(2)">tipografía b</a></li>
+                        <li><a href="javascript:changeContentFont(3)">tipografía c</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:openMenu('sub_imagen');changeImg(0)" class="nav-link-title">Imagen</a>
+                    <ul id="sub_imagen" class="sub-menu">
+                        <li><a href="javascript:changeImg(1)">foto a</a></li>
+                        <li><a href="javascript:changeImg(2)">foto b</a></li>
+                        <li><a href="javascript:changeImg(3)">foto c</a></li>
+                        <li><a href="javascript:changeImg(4)">foto d</a></li>
+                        <li><a href="javascript:changeImg(5)">foto e</a></li>
+                        <li><a href="javascript:changeImg(6)">foto f</a></li>
+                        <li><a href="javascript:changeImg(7)">foto g</a></li>
+                        <li><a href="javascript:changeImg(8)">foto h</a></li>
+                        <li><a href="javascript:changeImg()">foto random</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <p><img id="section-image" src="" alt="Texto de la imagen">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+                Etiam turpis tortor, sodales eget tincidunt vel, aliquet vitae justo. Fusce accumsan imperdiet
+                venenatis. Nunc pulvinar ante a augue aliquet volutpat. Nulla at purus non nisi tincidunt dapibus.
+                Integer tincidunt mauris quis nibh porta dignissim. Sed sit amet odio vel nulla interdum vulputate.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <p>Maecenas porttitor, erat et porta semper, nulla tellus consequat leo, eget malesuada sem mauris pretium
+                mi. Duis lectus dolor, eleifend vitae imperdiet et, pharetra id libero. Pellentesque sollicitudin ante
+                ac massa iaculis hendrerit. Fusce quis nisl ut turpis elementum aliquam vitae non purus. Nam dignissim
+                quam vitae sem rutrum sed varius ligula placerat. Vestibulum lorem purus, auctor id tempus quis, aliquet
+                at sapien. Nullam sollicitudin purus sollicitudin odio elementum ac dignissim magna consectetur.
+                Suspendisse facilisis quam vel ipsum convallis egestas. Pellentesque egestas faucibus diam, et faucibus
+                orci aliquet ut. Praesent laoreet massa non neque laoreet vestibulum. Suspendisse sollicitudin mauris
+                sed risus ornare ornare. Phasellus vitae nulla eget libero sodales rutrum in ac turpis. Duis consectetur
+                ante massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <p>Donec facilisis mattis tristique. Aenean interdum euismod adipiscing. Sed facilisis porttitor nibh at
+                sagittis. Mauris id viverra massa. Nullam vestibulum interdum ligula a cursus. Cras quis aliquam sapien.
+                In sodales venenatis ante, sit amet egestas diam gravida eget. Aenean ac arcu sit amet lacus lacinia
+                mollis. Etiam id nulla imperdiet est viverra venenatis ut quis felis. Fusce volutpat dictum sodales.</p>
+            <p>Maecenas vitae metus lorem, ac bibendum est. Proin sed massa quam, in suscipit dui. In posuere blandit
+                elit accumsan consequat. Nullam vitae dui turpis. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Praesent vehicula neque eget nunc fringilla sed feugiat enim
+                posuere. Donec aliquet tempor dolor. Integer turpis tellus, ornare nec scelerisque sit amet, tristique
+                sed urna. Vivamus pellentesque pulvinar nisl, sit amet molestie erat consequat eu.</p>
+            <p>Sed in turpis sed augue eleifend bibendum. Aenean felis dolor, luctus vel tempus sed, imperdiet nec
+                felis. Praesent lectus nunc, imperdiet sit amet blandit vitae, eleifend malesuada sapien. Sed convallis
+                arcu id urna vestibulum elementum. In condimentum sapien sed purus sollicitudin eu pretium diam
+                fermentum. Nunc at lorem sed augue euismod dictum. Quisque eget ultricies arcu. Suspendisse sit amet
+                iaculis tortor.</p>
+        </section>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
